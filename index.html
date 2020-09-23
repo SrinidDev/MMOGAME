@@ -1,0 +1,39 @@
+<html ng-app="tictactoe">
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+         <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
+         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+         <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="animate.css">
+         <link rel="icon" href="favicon.ico" type="image/x-icon" />
+         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+         <script src="angular.js"></script>
+        <script src="angular-route.js"></script>
+        <script src="app.js"></script>
+        <script src="firebase.js"></script>
+        <script src="angularfire.js"></script>
+        <script src="app.js"></script>
+		
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyA6iuUY1rlsazZW-y8MG7Zdfl3gTbeg2pY",
+            authDomain: "gamelb.firebaseapp.com",
+            databaseURL: "https://gamelb.firebaseio.com",
+            projectId: "gamelb",
+            storageBucket: "gamelb.appspot.com",
+            messagingSenderId: "771130719759"
+        };
+        firebase.initializeApp(config);
+        </script>
+    </head>
+    <body style="background: black;">
+        <ng-view>
+            
+        </ng-view>
+
+        
+
+    </body>
+</html>
